@@ -1,15 +1,16 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
         <SyledNav>
             <h1>
-                <a id="logo" href="#">Portfolio</a>
+                <Link id="logo" to="/">Portfolio</Link>
             </h1>
             <ul>
-                <li><a href="#">1. About Us</a></li>
-                <li><a href="#">2. Our Work</a></li>
-                <li><a href="#">2. Contact Us</a></li>
+                <li><Link to="/">1. About Us</Link></li>
+                <li><Link to="/work">2. Our Work</Link></li>
+                <li><Link to="/contact">2. Contact Us</Link></li>
             </ul>
         </SyledNav>
     );
