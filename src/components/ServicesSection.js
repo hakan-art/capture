@@ -67,6 +67,7 @@ p{
 }
 `;
 
+
 const Cards = styled.div`
 
 display: flex;
