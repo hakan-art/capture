@@ -54,13 +54,20 @@ h2{
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%)
-   
 }
 img{
     width: 100%;
     height: 70vh;
     object-fit: cover;
 }
+@media (max-width: 500px){
+    
+    h2{
+        font-size: 3rem;
+        margin-bottom:4rem;
+    }
+
+    }
 `;
 const Awards = styled.div`
 min-height: 80vh;
@@ -68,6 +75,12 @@ display: flex;
 margin: 5rem 10rem;
 align-items: center;
 justify-content: space-around;
+@media (max-width: 1500px){
+    
+   display: block;
+   margin: 2rem 2rem;
+
+    }
 `;
 
 const AwardStyle = styled.div`

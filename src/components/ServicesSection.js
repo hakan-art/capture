@@ -67,6 +67,7 @@ p{
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
 }
+
 `;
 
 
@@ -74,6 +75,9 @@ const Cards = styled.div`
 
 display: flex;
 flex-wrap: wrap;
+@media (max-width: 1300px){
+       justify-content:center;
+    }
 `;
 
 const Card = styled.div`
