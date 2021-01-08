@@ -6,7 +6,7 @@ import Nav from './components/Nav';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
-import ScrollTop from './components/ScrollTop'
+// import ScrollTop from './components/ScrollTop'
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom';
 import MovieDetail from './pages/MovieDetail';
