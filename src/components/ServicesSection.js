@@ -1,5 +1,6 @@
 
-import home2 from '../img/home2.png'
+// import home2 from '../img/home2.png';
+import soft from '../img/skillsw.jpeg';
 // Import icons
 import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';
@@ -17,42 +18,44 @@ const ServicesSection = () => {
         <Services variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
             <Description>
                 <h2>
-                    High <span>quality</span> services.
+                    Meine <span>Soft</span> Skills.
                 </h2>
                 <Cards>
                     <Card>
                         <div className="icon">
                             <img src={clock} alt="icon clock" />
-                            <h3>Efficient</h3>
+                            <h3>KREATIVITÄT</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Kreativität ist als Soft Skill die Fähigkeit, gute und möglichst neuartige Lösungen für Probleme zu entwickeln.</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={teamwork} alt="icon teamwork" />
-                            <h3>Teamwork</h3>
+                            <h3>TEAM PLAYER</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Expertentum nutzt gar nichts, wenn es nicht mit den Kollegen geteilt  und diese nicht von mir profitieren können und andersherum.
+
+</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={diaphragm} alt="icon diaphragm" />
-                            <h3>Diaphragm</h3>
+                            <h3>KOMMUNIKATION</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Kommunikationsfähigkeit ist nicht nur, meine Ideen besonders verständlich zu formulieren, sondern auch, dass ich anderen aufmerksam zuhöre und verstehe. </p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={money} alt="icon money" />
-                            <h3>Affordable</h3>
+                            <h3>FLEXIBILITÄT</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Flexibilität bedingt, dass ich auch mal unvorhergesehene Änderungen umsetze und nicht in starren Mustern denke.</p>
                     </Card>
                 </Cards>
 
             </Description>
             <Image>
-                <img src={home2} alt=" camera" />
+                <img src={soft} alt=" camera" />
             </Image>
         </Services>
     );
@@ -91,6 +94,7 @@ flex-basis: 20rem;
         color: black;
         padding: 1rem;
     }
+    
 
 }
 `

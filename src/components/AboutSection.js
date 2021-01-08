@@ -1,5 +1,7 @@
-import home1 from '../img/home1.png'
+// import home1 from '../img/home1.png';
+import coding from '../img/coding.jpeg';
 //Styled Components 
+import styled from 'styled-components';
 import { About, Description, Image, Hide } from '../styles'
 //Framer Motion
 
@@ -20,23 +22,24 @@ const AboutSection = () => {
             <Description>
                 <motion.div>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+                        <motion.h2 variants={titleAnim}>Willkommen auf </motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>your <span>dreams</span> come</motion.h2>
+                        <motion.h2 variants={titleAnim}>meine <span>Web</span> Portfolio</motion.h2>
                     </Hide>
 
                     <Hide>
-                        <motion.h2 variants={titleAnim}>true.</motion.h2>
+                        <motion.h2 variants={titleAnim}>Seite.</motion.h2>
                     </Hide>
 
                 </motion.div>
-                <motion.p variants={fade}>Contact us for any photography or videography ideas that you have. We have professionals with amazing skills.</motion.p>
+                <motion.p variants={fade}>Ich bin Hakan Gezer und auf dieser Seite will ich mein Werdegang mit meinen schulischen und beruflichen Stationen aufzeigen und Zugang zu einigen meiner Projekte geben.</motion.p>
 
-                <motion.button variants={fade}>Contact Us</motion.button>
+                <motion.button variants={fade}> <StyledA href="mailto:h.gezer@arcor.de" target="__blank">Contact Me</StyledA> </motion.button>
             </Description>
             <Image>
-                <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+                <motion.img variants={photoAnim} src={coding} alt="guy with a camera" />
+
             </Image>
             <Wave />
         </About>
@@ -44,7 +47,10 @@ const AboutSection = () => {
 };
 
 // Styled Components
-
+const StyledA = styled.a`
+text-decoration: none;
+color: white;
+`;
 
 
 export default AboutSection;

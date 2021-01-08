@@ -11,13 +11,13 @@ const Nav = () => {
                 <Link id="logo" to="/">Portfolio</Link>
             </h1>
             <ul>
-                <li><Link to="/">1. About Us</Link>
+                <li><Link to="/">1. Über mich</Link>
                     <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/" ? "50%" : "0%" }} />
                 </li>
-                <li><Link to="/work">2. Our Work</Link>
+                <li><Link to="/work">2. Projekte</Link>
                     <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/work" ? "50%" : "0%" }} />
                 </li>
-                <li><Link to="/contact">3. Contact Us</Link>
+                <li><Link to="/contact">3. Kontakt</Link>
                     <Line transition={{ duration: 0.75 }} initial={{ width: "0%" }} animate={{ width: pathname === "/contact" ? "50%" : "0%" }} />
                 </li>
             </ul>

@@ -17,19 +17,21 @@ const ContactUs = () => {
                 <Hide>
                     <Social variants={titleAnim}>
                         <Circle />
-                        <h2>Send Us A Message</h2>
+                        <a href="https://api.whatsapp.com/send?phone=+491713591908" target="__blank"><h2>Send Me A Message (Whatsapp)</h2></a>
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnim}>
                         <Circle />
-                        <h2>Email Us</h2>
+                        <a href="mailto:h.gezer@arcor.de" target="__blank"><h2>Email Me</h2></a>
+
                     </Social>
                 </Hide>
                 <Hide>
                     <Social variants={titleAnim}>
                         <Circle />
-                        <h2>Social Media</h2>
+                        <a href="https://www.linkedin.com/in/hakan-gezer/" target="__blank"><h2>LinkedIn</h2></a>
+
                     </Social>
                 </Hide>
             </div>
@@ -74,6 +76,10 @@ display: flex;
 align-items: center;
 h2{
     margin: 2rem;
+}
+a{
+    text-decoration: none;
+    color:#353535;
 }
 @media (max-width: 800px){
 

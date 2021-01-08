@@ -4,9 +4,15 @@ import ScrollTop from '../components/ScrollTop'
 
 
 //Images
-import athlete from '../img/athlete-small.png';
-import theracer from '../img/theracer-small.png';
-import goodtimes from '../img/goodtimes-small.png';
+// import athlete from '../img/athlete-small.png';
+// import theracer from '../img/theracer-small.png';
+// import goodtimes from '../img/goodtimes-small.png';
+// import arbeit from '../img/arbeits.jpg';
+import basic from '../img/Basic.png';
+import api1 from '../img/api-oben.png';
+import figma from '../img/figma.png';
+
+
 
 //Animation
 import { motion } from "framer-motion"
@@ -27,28 +33,28 @@ const OurWork = () => {
                 <Frame4 variants={slider}></Frame4>
             </motion.div>
             <Movie>
-                <motion.h2 variants={fade}>The Athlete</motion.h2>
+                <motion.h2 variants={fade}>React Api Redux</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/the-athlete">
                     <Hide>
-                        <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+                        <motion.img variants={photoAnim} src={api1} alt="athlete" />
                     </Hide>
                 </Link>
             </Movie>
 
             <Movie >
-                <h2>The Racer</h2>
+                <h2>Basic Agency</h2>
                 <div className="line"></div>
                 <Link to="/work/the-racer">
-                    <img src={theracer} alt="racer" />
+                    <img src={basic} alt="racer" />
                 </Link>
             </Movie>
 
             <Movie  >
-                <h2>Good Times</h2>
+                <h2>Figma Prototyping UI UX</h2>
                 <div className="line"></div>
                 <Link to="/work/good-times">
-                    <img src={goodtimes} alt="gootTimes" />
+                    <img src={figma} alt="gootTimes" />
                 </Link>
             </Movie>
             <ScrollTop />

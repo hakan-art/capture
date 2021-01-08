@@ -29,7 +29,7 @@ const MovieDetail = () => {
                     </HeadLine>
                     <Awards>
                         {movie.awards.map((award) => (
-                            <Award title={award.title} description={award.description} key={award.title} />
+                            <Award title={award.title} description={award.description} link={award.link} key={award.title} />
                         ))}
                     </Awards>
                     <ImageDisplay>
@@ -75,7 +75,7 @@ display: flex;
 margin: 5rem 10rem;
 align-items: center;
 justify-content: space-around;
-@media (max-width: 1500px){
+@media (max-width: 1200px){
     
    display: block;
    margin: 2rem 2rem;
@@ -110,7 +110,7 @@ img{
 `
 
 //Awards Component
-const Award = ({ title, description }) => {
+const Award = ({ title, description, link }) => {
     return (
         <AwardStyle>
             <h3>
@@ -118,10 +118,28 @@ const Award = ({ title, description }) => {
             </h3>
             <div className="line"></div>
             <p>{description}</p>
+            <StyledLink href={link} target="__blank">Go to Site</StyledLink>
+
         </AwardStyle>
     );
 };
+const StyledLink = styled.a`
+text-decoration: none;
+font-weight: bold;
+    font-size: 1.1.rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #23d997;
+    background: transparent;
+    color: white;
+    transition: all .5s ease;
+    font-family: 'Inter', sans-serif;
 
+    &:hover{
+        background-color: #23d997;
+        color: white;
+    }
+`;
 
 
 
