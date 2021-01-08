@@ -22,6 +22,18 @@ const StyledImg = styled.img`
 margin-left: .5rem;
 transition: all .5s ease;
 width: 1.2%;
+@media (max-width: 800px){
+       
+    width: 3%;
+       
+      
+    }
+    @media (max-width: 520px){
+       
+       width: 4%;
+          
+         
+       }
 
 `;
 

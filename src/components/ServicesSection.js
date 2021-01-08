@@ -81,6 +81,14 @@ flex-wrap: wrap;
 @media (max-width: 1300px){
        justify-content:center;
     }
+    @media (max-width: 500px){
+        width: 100%;
+        margin-left:1rem;
+        
+       
+      
+    }
+    
 `;
 
 const Card = styled.div`
@@ -94,6 +102,7 @@ flex-basis: 20rem;
         color: black;
         padding: 1rem;
     }
+    
     
 
 }

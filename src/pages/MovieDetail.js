@@ -53,7 +53,12 @@ h2{
     position: absolute;
     top: 10%;
     left: 50%;
-    transform: translate(-50%, -10%)
+    transform: translate(-50%, -10%);
+
+    @media (max-width: 900px){
+    
+    font-size:1rem;
+    }
 }
 img{
     width: 100%;
@@ -63,8 +68,9 @@ img{
 @media (max-width: 500px){
     
     h2{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom:4rem;
+        text-align:center;
     }
 
     }
@@ -98,6 +104,13 @@ h3{
 p{
     padding: 2rem 0rem;
 }
+@media (max-width: 500px){
+    
+   p{
+       text-align:center;
+   }
+   
+    }
 `;
 
 const ImageDisplay = styled.div`
@@ -134,6 +147,12 @@ font-weight: bold;
     color: white;
     transition: all .5s ease;
     font-family: 'Inter', sans-serif;
+    @media (max-width: 500px){
+    display:inline-block;
+    width: 100%;
+    text-align:center;
+    margin-top: 3rem;
+    }
 
     &:hover{
         background-color: #23d997;
